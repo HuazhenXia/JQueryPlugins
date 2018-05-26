@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>jQuery sliders plugins</title>
+<link href="css/jquery.slideBox.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+<script src="js/jquery.slideBox.js" type="text/javascript"></script>
+<script>
+jQuery(function($){
+	$('#demo1').slideBox();
+	$('#demo2').slideBox({
+		direction : 'top',
+		duration : 0.3,//s
+		easing : 'linear',
+		delay : 5, //s
+		startIndex : 1
+	});
+	$('#demo3').slideBox({
+		duration : 0.3, //set lasting time of each picture
+		easing : 'linear',
+		delay : 5,
+		hideClickBar : false,
+		clickBarRadius : 10
+	});
+	$('#demo4').slideBox({
+		hideBottomBar : true
+	});
+});
+</script>
+</head>
+
+<body>
+<h3>No1. left|right; last 0.6s; delay 3s; swing; hide button</h3>
+<div id="demo1" class="slideBox">
+  <ul class="items">
+    <li><a href="http://www.jq22.com/" title="This is title one"><img src="img/1.jpg"></a></li>
+    <li><a href="http://www.jq22.com/" title="This is title one"><img src="img/2.jpg"></a></li>
+    <li><a href="http://www.jq22.com/" title="This is title one"><img src="img/3.jpg"></a></li>
+    <li><a href="http://www.jq22.com/" title="This is title one"><img src="img/4.jpg"></a></li>
+  </ul>
+</div>
+<h3>No2. up|down; last 0.3s; delay 5s; linear; start with 2nd pic;hide button</h3>
+<div id="demo2" class="slideBox">
+  <ul class="items">
+    <li><a href="#" title="This is title one"><img src="img/1.jpg"></a></li>
+    <li><a href="#" title="This is title two"><img src="img/2.jpg"></a></li>
+    <li><a href="#" title="This is title three"><img src="img/3.jpg"></a></li>
+    <li><a href="#" title="This is title four"><img src="img/4.jpg"></a></li>
+    <li><a href="#" title="This is title five"><img src="img/5.jpg"></a></li>
+  </ul>
+</div>
+<h3>No3. left|right; last 0.3s; delay 5s; linear; show button</h3>
+<div id="demo3" class="slideBox">
+  <ul class="items">
+    <li><a href="#" title="This is title one"><img src="img/1.jpg"></a></li>
+    <li><a href="#" title="This is title two"><img src="img/2.jpg"></a></li>
+    <li><a href="#" title="This is title three"><img src="img/3.jpg"></a></li>
+    <li><a href="#" title="This is title four"><img src="img/4.jpg"></a></li>
+    <li><a href="#" title="This is title five"><img src="img/5.jpg"></a></li>
+  </ul>
+</div>
+<h3>No4. Hide Bottom Bar</h3>
+<div id="demo4" class="slideBox">
+  <ul class="items">
+    <li><a href="#" title="This is title one"><img src="img/1.jpg"></a></li>
+    <li><a href="#" title="This is title two"><img src="img/2.jpg"></a></li>
+    <li><a href="#" title="This is title three"><img src="img/3.jpg"></a></li>
+    <li><a href="#" title="This is title four"><img src="img/4.jpg"></a></li>
+    <li><a href="#" title="This is title five"><img src="img/5.jpg"></a></li>
+  </ul>
+</div>
+</body>
+</html>
